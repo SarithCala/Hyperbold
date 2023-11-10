@@ -1,0 +1,531 @@
+body {
+    background: #222;
+    font-family: "ClashDisplay-Regular", sans-serif;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen-3 h4 {
+    animation: marquee 10s linear infinite;
+
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+}
+
+.logo img {
+    width: 182px;
+}
+
+.home-screen {
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 1.25rem;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: #959595;
+}
+
+nav ul a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+  
+  nav ul a:hover {
+    color: #D3D5FF; 
+    text-shadow: 0px 0px 10px #D3D5FF; 
+  }
+
+nav ul li.active {
+    border-radius: 9999px;
+    background-color: white;
+    padding: 0.25rem 0.75rem;
+    color: #141316;
+}
+
+nav ul li.active a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    color: #232323; 
+    text-decoration: none; 
+  }
+  
+  nav ul li.active a:hover {
+    color: #9799d1; 
+    text-shadow: 0px 0px 10px #D3D5FF; 
+  }
+
+.home-screen .content h1 {
+    font-size: 270px;
+    font-weight: 600;
+    color: #D3D5FF;
+    line-height: 1;
+    font-family: "ClashDisplay-Semibold", sans-serif;
+}
+
+
+.home-screen .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.home-screen .content h2 {
+    font-size: 47px;
+    color: #CCCCCC;
+}
+
+
+.home-screen .content .chevron-down {
+    margin-top: 2.5rem;
+}
+
+
+.screen-2 {
+    display: flex;
+    background-color: #F1F1F1;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
+.screen-2 h2 {
+    color: #262626;
+    font-size: 175px;
+    width: 798px;
+    line-height: 0.9;
+}
+
+.screen-2 h2 {
+    transform: translateX(-100%); 
+    transition: transform 0.8s ease-in-out; 
+  }
+  
+  .screen-2 h2.visible {
+    transform: translateX(0);
+  }
+
+.screen-2 .wrap {
+    display: flex;
+    flex: 1;
+    margin-top: 2.5rem;
+}
+
+
+.screen-2 .wrap .texts {
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    gap: 2.5rem;
+    font-family: Montserrat, serif;
+}
+
+.screen-2 .wrap .texts {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  .screen-2 .wrap .texts.visible {
+    opacity: 1; 
+  }
+
+.screen-2 .wrap .texts p {
+    flex: 1;
+    color: #141316;
+}
+
+
+.screen-2 .happy-faces {
+    flex: 1;
+}
+
+.happy-faces {
+    transform: translateX(-100%); 
+    transition: transform 0.8s ease-in-out; 
+  }
+  
+  .happy-faces.visible {
+    transform: translateX(0); 
+  }
+
+.screen-3 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #222;
+    padding: 3rem;
+    font-size: 32px;
+    font-family: "Climate Crisis", sans-serif;
+    color: #FBFDD2;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+.screen-4 {
+    display: flex;
+    gap: 2.5rem;
+    background-color: #FBFDD2;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
+
+.screen-4 h2 {
+    font-size: 118px;
+    line-height: 1;
+    width: 920px;
+}
+
+.screen-4 h2 {
+    transform: translateX(-100%); 
+    transition: transform 0.8s ease-in-out; 
+  }
+  
+  .screen-4 h2.visible {
+    transform: translateX(0); 
+  }
+
+.screen-4 p {
+    padding-left: 50%;
+    padding-right: 10%;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
+.screen-4 p {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  .screen-4 p.visible {
+    opacity: 1; 
+  }
+
+
+.screen-5 {
+    color: #141316;
+}
+
+.screen-5 {
+    display: flex;
+    gap: 2.5rem;
+    padding: 90px;
+    flex-direction: column;
+    line-height: 1;
+    color: #FBFDD2;
+    font-size: 90px;
+    background: #222;
+}
+
+.screen-5 h2 {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    visibility: hidden; 
+  }
+  
+  .screen-5 h2.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; 
+  }
+
+.screen-5 .cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    color: black;
+    gap: 2.5rem;
+}
+
+
+.screen-5 .cards .card:nth-child(odd) {
+    background-color: #D3D5FF;
+}
+
+
+.screen-5 .cards .card:nth-child(even) {
+    background-color: #C1EAFF;
+}
+
+.screen-5 .cards .card {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 36px;
+    padding: 3rem;
+    padding-bottom: 2rem !important;
+    flex-direction: column;
+    border-radius: 37px;
+}
+
+.screen-5 .cards .card h3 {
+    font-size: 36px;
+}
+
+.screen-5 .cards .card p {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.screen-5 .cards .card {
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s ease-in-out; 
+    will-change: transform, opacity; 
+  }
+  
+  .screen-5 .cards .card.visible {
+    opacity: 1; 
+    transform: scale(1); 
+    animation: bounce 0.5s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+  }
+.screen-5 .projects {
+    color: white;
+}
+
+.screen-5 .projects .project .project-content {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.project-texts {
+    flex: 1 1 0;
+}
+
+.screen-5 .projects .project .btn-wrap {
+    display: flex;
+    color: #222222;
+    align-items: center;
+    position: relative;
+    overflow: hidden
+}
+
+.btn-wrap a {
+    transition: all 0.2s ease;
+    background-color: #D3D5FF;
+  }
+  
+  .btn-wrap a:hover {
+    animation: bounceAndColorChange 0.6s;
+  }
+  
+  @keyframes bounceAndColorChange {
+    0%, 100% {
+      transform: translateY(0);
+      background-color: #D3D5FF; 
+    }
+    50% {
+      transform: translateY(-10px);
+      background-color: #fefeff; 
+    }
+  }
+
+
+.screen-5 .projects img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.screen-5 .projects a {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    background: #D3D5FF;
+    font-size: 26px;
+}
+
+
+
+
+
+.screen-5 .projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+}
+
+.screen-5 .projects h3 {
+    line-height: 1;
+    font-size: 40px;
+    font-family: "ClashDisplay-Medium", sans-serif;
+    font-weight: 500;
+}
+
+.screen-5 .projects h4 {
+    font-size: 38px;
+}
+
+.screen-6 {
+    background: #D3D5FF;
+    font-family: "ClashDisplay-Medium", sans-serif;
+    font-size: 254px;
+    padding: 20px 80px;
+    font-weight: 500;
+    color: #222;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 300vw;
+    position: relative;
+}
+
+.screen-6 h2 {
+    white-space: nowrap;
+    font-size: 254px;
+    transform: translateX(0);
+}
+   
+
+
+
+.screen-7 {
+    color: #FBFDD2;
+    text-align: center;
+    font-size: 82px;
+    line-height: 1;
+}
+
+.screen-7 h2 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.screen-7 .team {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
+
+.screen-7 .team .member img {
+    border-radius: 1.5rem;
+}
+
+.screen-7 .team .member h4 {
+    color: #FFF;
+    font-size: 41px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.screen-7 .card {
+    display: flex;
+    padding: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    gap: 2.5rem;
+    align-items: center;
+    border-radius: 1.5rem;
+    text-align: left;
+    background: #D3D5FF url("bg-card.png") no-repeat;
+    color: #222;
+}
+
+.screen-7 .card h3 {
+    flex: 1 1 0;
+    font-size: 85px;
+}
+
+.screen-7 .card a {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 9999px;
+    background: #222;
+    color: #D3D5FF;
+}
+
+.screen-7 .card>div {
+    flex: 1 1 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.screen-7 .card a {
+    font-size: 30px;
+    padding: 0.75rem 2.5rem;
+    margin-top: 1rem;
+}
+
+footer {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+    color: #ffffff;
+
+
+    @import "compass/css3";
+
+    html {
+        background: #0E3741;
+    }
+
+    .circle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+        background: #CB4B16;
+        border-radius: 80%;
+        backface-visibility: hidden;
+    }
+
+}
